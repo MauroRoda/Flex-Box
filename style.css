@@ -1,0 +1,101 @@
+/*Resetando as configurações*/
+
+*{
+    /*Retira Margem*/
+    margin: 0px;
+    /*Retira o Padding*/
+    padding: 0px;
+    /*Retira o estilo da lista*/
+    list-style: none;
+    /*Define um tamanho de fonte inicial (até ser alterada individualmente*/
+    font-size: 1.2rem;
+    /*Defini um tipo de fonte inicial*/
+    font-family: Arial;
+}
+
+/*Retirar a decoração (linhas) das letras da lista*/
+a{
+    text-decoration: none;
+    /*altera a cor dos elementos dentro de (a)*/
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 0px 10px;
+}
+
+/*1 alterar a caracteristica estrutural (posicionamento dos elementos) do header*/
+/*Com Display Flex*/
+.header{
+    /*Comando para inserir um preenchimento de fundo */
+    background-color: #1d1e20;
+    /*Define o display flex "inicialemnte com estrutura em linha" row.
+    oque deixa os componentes do header em linha, um ao lado do outro*/
+    display: flex;
+    /*comando Flex-wrap: wrap ira quebrar o conteudo do header quando a tela for menor */
+    flex-wrap: wrap;
+    /*Definindo a disposição (justify-content) e o espaçamento entre os itens */
+    justify-content: space-between;
+    /*Definir um espaçamento em todos os lados, entre o conteudo e a borda com o (padding)*/
+    padding: 20px;
+    /*Alinhamos verticalmente ao centro todos os conteudos que estão no Header com (align-items: center)*/
+    align-items: center;
+}
+
+/*## Estilizando o BOX do conjunto Menu*/
+.menu {
+    /*Incluindo as caracteristicas estruturasis do Flex box, (estrutura padrao inicial em linha)*/
+    display: flex;
+}
+
+/*Estilizando o Box de cada item no menu (cada elemento)*/
+.menu li {
+    /*criando uma margem entre os itens*/
+    margin-left: 10px;
+}
+
+/*Estilizando o bloco do item 'a' (Cada "botao" do menu*/
+.menu li a {
+    /*Definindo o elemento 'a' como um unico bloco*/
+    display: block;
+    /*Definindo um espaçamento entre o conteudo e a margem com o passing*/
+    padding: 10px;
+}
+
+/*############################     A partir daqui temos o corpo da pagina     #############################################*/
+
+/*  Colocando as imagens responsivas*/
+img {
+    /*definindo o tamanho da imagem, pq a img que peguei é pequena*/
+    width: 1000px;
+    /*Definir que seu tamanho maximo será o do proprio container*/
+    max-width: 100%;
+    /*Definir a imagem como sendo um unico bloco*/
+    display: block;
+}
+
+
+/*  CSS FlexBox*/
+
+/*Alterando o container do conjunto de imagens*/
+.flex {
+    /*Incluir a estrutura do display flez, deixando os itens lado a lado*/
+    display: flex;
+    /*Indicação que a imagem pode ser quebrada com o comando (flex) abaixo*/
+    flex-wrap: wrap;
+    /*Definindo que a divisão (linha dde cards) tenha no maximo um valor*/
+    max-width: 800px;
+    /*Comando para centralizar o elemento*/
+    margin: 0 auto;
+}
+
+/*Definir um tamanho minimo para cada item o container (div) com a "imagem" e a legenda*/
+.flex > div {
+    /*definindo as caracteristicas, onde é permitido aumetnar, diminuir e tenha um tamanho minimo de 200px*/
+    flex: 1 1 200px;
+    /*Colocando uma margem entre os itens*/
+    margin: 10px;
+    
+}
+
